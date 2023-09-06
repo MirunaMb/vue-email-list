@@ -29,7 +29,9 @@
     <div class="wrapper" id="app">
         <h1>Emails</h1>
         <ul>
-            <li v-for="email in emailList">{{ email}}</li>
+            <li v-for="email in emailList" v-show="emailList.length === 10 ">{{ email}}
+
+            </li>
         </ul>
     </div>
 
